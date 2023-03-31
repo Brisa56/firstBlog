@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../img/2.jpg");
+    font-size: 14px;
+    padding-top: 5px;
+}
+/*导航栏========================================================*/
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    border: 1px #5bfffa dashed;
+}
+.header ul{
+    list-style-type: none;
+    font-size: 16px;
+    padding: 8px 0;
+}
+.header li{
+    display: inline-block;
+    margin: 0 100px 0 88px;
+    text-align: center;
+}
+.header a{
+    text-decoration: none;
+    color: #e6863a;
+    font-weight: bold;
+}
+.header a:hover{
+    text-decoration: underline;
+    color: #2aff4a;
+}
+.container{
+    overflow: hidden;
+}
+/*日历========================================================*/
+.calendar{
+
+    display: block;
+    margin: 10px 10px 0 25px;
+    width: 150px;
+    height: 150px;
+    background: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.title{
+    height: 20px;
+    position: relative;
+    text-align: center;
+}
+#calendar-title{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 14px 0 0 0;
+}
+#calendar-year{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+#pre{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*没规定大小时，图片显示 0X0*/
+    width: 60px;
+    height: 70px;
+
+}
+#next{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 70px;
+}
+.body-list ul{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+.body-list ul li{
+    list-style: none;
+    font-size: 6px;
+    display: block;
+    width: 14.28%;
+    float: left;
+
+    /*规定行高，垂直居中*/
+    height: 15px;
+    line-height: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.body-list ul[id='week']{
+    margin-top: 40px;
+}
+
+.green{
+    color:#6ac13c;
+}
+.lightgrey{ /*浅灰色显示过去的日期*/
+    color:#a8a8a8;
+}
+.darkgrey{ /*深灰色显示将来的日期*/
+    color:#565656;
+}
+/*日期当天用绿色背景绿色文字加以显示*/
+.greenbox{
+    border: 1px solid #6ac13c;
+    height: 15px;
+    background: #e9f8df;
+}
+/*左侧栏文字====================================================*/
+.left_aside h4{
+    margin: 20px;
+    text-align: center;
+    /*text-indent: 2em;*/
+    color: #8aecc0;
+}
+.left_aside p{
+    position: relative;
+    left: -20px;
+    text-align: center;
+    color: #8aecc0;
+}
+.aside ul{
+    text-decoration: none;
+}
+.aside a{
+    text-decoration: none;
+}
+.aside{
+    height: 3600px;/*左侧边栏*/
+    width: 200px;
+    border-right: #000000 1px dotted;
+}
+.left_aside{
+    float: left;
+}
+/*.aside ol{*/
+/*    display: block;*/
+/*    list-style: '1';*/
+/*    top: 100px;*/
+/*}*/
+.aside ol[id=title]{
+    /*margin-top: 200px;*/
+    list-style: decimal;
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #8aecc0;
+}
+#title li a{
+    z-index: 1;
+    color: #8aecc0;
+    position: absolute;
+}
+#title li a:hover{
+    color: #ffc186;
+}
+/*内容区=======================================================*/
+.content{
+    position: absolute;
+    top: 50px;
+    width: 750px;
+    margin: 15px 15px;
+    padding: 30px 220px;
+    /*display: inline-block;*/
+    overflow: hidden;
+}
+
+.content img{
+    position: relative;
+    width: 240px;
+    margin: 10px 80px 10px 20px;
+}
+
+.content h4{
+    /*border: 1px solid #a1a1a1;*/
+    padding-bottom: 20px;
+    color: #ffc186;
+}
+.content li{
+    list-style: none;
+}
+.content li[class=song]{
+    margin-top: 5px;
+    height: 100px;
+    display: block;
+    vertical-align: middle;
+}
+.content p,a{
+    /*padding-bottom: 5px;*/
+    line-height: 25px;
+    /*text-indent: 2em;*/
+}
+.content li a,p{
+    margin-left: 20px;
+    vertical-align: middle;
+    text-indent: 2em;;
+}
+.content a{
+    position: relative;
+    left: 5%;
+    /*margin-left: 80px;*/
+    color: #7d75ff;
+}
+.content a:hover{
+    color: #8aecc0;
+}
+.music img{
+    margin: 0;
+}
+.content h5{
+    font-size: 15px;
+    font-weight: normal;
+}
+/*尾部==================================*/
+
+.footer{
+    text-align: center;
+    padding-top: 15px;
+    color: #393b40;
+    border-top: 1px dotted rgba(0, 0, 0, 0.57);
+    height: 40px;
+    background-color: #70caff;
+    opacity: 0.9;
+}

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>橙子小屋</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="../layDate-v5.0.9/laydate/laydate.js"></script>
+    <!--    <style>-->
+    <!--        *{-->
+    <!--            margin: 0;-->
+    <!--            padding: 0;-->
+    <!--        }-->
+    <!--        body{-->
+    <!--            min-width: 600px;-->
+    <!--        }-->
+    <!--        /*头部+尾部*/-->
+    <!--        .header,.footer{-->
+    <!--            width: 100%;-->
+    <!--            height: 100px;-->
+    <!--            line-height: 100px;-->
+    <!--            background-color: #2fff99;-->
+    <!--            text-align: center;-->
+    <!--            font-size: 30px;-->
+    <!--        }-->
+    <!--        /*主体*/-->
+    <!--        .container{-->
+    <!--            padding: 0 200px;-->
+    <!--            overflow: hidden;-->
+    <!--        }-->
+    <!--        .column{-->
+    <!--            float: left;-->
+    <!--            height: 400px;-->
+    <!--            position: relative;-->
+    <!--        }-->
+    <!--        .left{-->
+    <!--            width: 200px;-->
+    <!--            background-color: #f00;-->
+    <!--            margin-left: -100%;-->
+    <!--            left: -200px;-->
+    <!--        }-->
+    <!--        .center{-->
+    <!--            width: 100%;-->
+    <!--            background-color: #0f0;-->
+    <!--        }-->
+    <!--        .right{-->
+    <!--            width: 200px;-->
+    <!--            background-color: #0ff;-->
+    <!--            margin-left: -200px;-->
+    <!--            right:-200px;-->
+    <!--        }-->
+    <!--    </style>-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 一个网页通常由上中下本部分组成 -->
+    <!--1.header头部-->
+    <div class="header">
+        <ul>
+            <li class="li">
+                <a href="my_first_page.html">我的主页</a>
+            </li>
+            <li class="li">
+                <a href="study.html">学习园地</a>
+            </li>
+            <li class="li">
+                <a href="leisure.html">秘密乐园</a>
+            </li>
+            <li class="li">
+                <a href="else.html">其他</a>
+            </li>
+        </ul>
+        <hr />
+    </div>
+    <!--2.content主体内容区-->
+    <div class="container">
+        <div class="column center content">
+            <img src="img/头像.jpeg" alt="我的照片">
+            <h4>橙橙也想要花花</h4>
+            <p>一个简简单单的工科女生，却想拥有不那么简单地梦想，对摄影，对音乐，对电影，对书籍......</p>
+            <table>
+                <tr>
+                    <td>姓名：橙子</td>
+                </tr>
+                <tr>
+                    <td>生日：May</td>
+                </tr>
+                <tr>
+                    <td>星座：双子座</td>
+                </tr>
+                <tr>
+                    <td>兴趣：电影，动漫，摄影，听音乐......</td>
+                </tr>
+            </table>
+            <h6>我想踩碎了时光，游过梦想，去寻找...</h6>
+            <p>燃烧的星星坠落在海底开成珊瑚</p>
+            <p>揉碎的白云环绕着山峦流成大河</p>
+            <p>那种梦幻，不真切，却令人迷醉的心动</p>
+            <p>就像晚风拥抱月亮，海浪亲吻礁石......</p>
+            <span style="margin: 20px;"></span>
+            <p>你好，很高兴你能来</p>
+            <p>这个花园，欢迎随时来光顾</p>
+            <p>欢迎点击导航栏我的其他页面，发现更多的我......</p>
+        </div>
+        <div class="aside column left">
+            <div class="left_aside">
+                <h4>欢迎来到橙子小屋！</h4>
+                <p>陌生人</p>
+                <p>欢迎你的到来</p>
+                <div class="calendar">
+                    <div class="title">
+                        <h1 class="green" id="calendar-title">Month</h1>
+                        <h2 class="green" id="calendar-year">Year</h2>
+                        <a href="" id="pre"></a>
+                        <a href="" id="next"></a>
+                    </div>
+                    <div class="body" style="">
+                        <div class="lightgrey body-list">
+                            <ul id="week">
+                                <li>SUN</li>
+                                <li>MON</li>
+                                <li>TUE</li>
+                                <li>WED</li>
+                                <li>THU</li>
+                                <li>FRI</li>
+                                <li>SAT</li>
+                            </ul>
+                        </div>
+                        <div class="darkgrey body-list">
+                            <ul id="days">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column right aside">
+            <!--        <div style="margin-top: 30px;"></div>-->
+            <div class="right_aside">
+                <div class="right_content">
+                    <p>联系我吧！</p>
+                    <p>contact me:</p>
+                    <p>1556004890@qq.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--3.footer尾部-->
+    <div class="footer"><p>copyright:&copy;2020橙橙也想要花花</p></div>
+</div>
+</body>
+<script src="js/calender.js"></script>
+</html>
